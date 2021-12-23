@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+
+/** Resets **/
+:root {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+/** Styles **/
+body {
+  --clr-very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --clr-desaturated-dark-blue: hsl(214, 17%, 51%);
+  --clr-grayish-blue: hsl(212, 23%, 69%);
+  --clr-light-grayish-blue: hsl(210, 46%, 95%);
+
+  font-family: "Manrope", sans-serif;
+  background: var(--clr-light-grayish-blue);
+  min-height: 100vh;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  margin-top: 4.625em;
+}
+
+.card {
+  width: 87.2%;
+  max-width: 730px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 60px -40px var(--clr-desaturated-dark-blue);
+}
+
+.card__hero {
+  height: 12.5em;
+}
+
+.card__image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card__body {
+  color: var(--clr-desaturated-dark-blue);
+  font-size: 0.8125rem;
+  background: white;
+  padding: 3.23em 2.46em 1.54em;
+}
+
+.card__title {
+  color: var(--clr-very-dark-grayish-blue);
+  font-size: 1rem;
+  margin-bottom: 1.5em;
+}
+
+.card__prose {
+  margin-bottom: 2.8em;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.attribution {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 1.23em;
+}
+
+.attribution__image {
+  grid-row: span 2;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.attribution__name {
+  color: var(--clr-very-dark-grayish-blue);
+  font-weight: bold;
+}
+
+.attribution__subtext {
+  color: var(--clr-grayish-blue);
+}
+
+.share {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--clr-light-grayish-blue);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.footer {
+  font-size: 11px;
+  text-align: center;
+}
+
+.footer__link {
+  color: hsl(228, 45%, 44%);
+}
+
+/** Utility classes **/
+
+.hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
