@@ -49,8 +49,21 @@ body {
   box-shadow: 0 10px 60px -40px var(--clr-desaturated-dark-blue);
 }
 
+@media (min-width: 768px) {
+  .card {
+    display: grid;
+    grid-template-columns: 17.8125em 1fr;
+  }
+}
+
 .card__hero {
   height: 12.5em;
+}
+
+@media (min-width: 768px) {
+  .card__hero {
+    height: auto;
+  }
 }
 
 .card__image {
@@ -59,11 +72,23 @@ body {
   object-fit: cover;
 }
 
+@media (min-width: 768px) {
+  .card__image {
+    object-position: left center;
+  }
+}
+
 .card__body {
   color: var(--clr-desaturated-dark-blue);
   font-size: 0.8125rem;
   background: white;
   padding: 3.23em 2.46em 1.54em;
+}
+
+@media (min-width: 768px) {
+  .card__body {
+    padding: 3em 3.1em 2.46em;
+  }
 }
 
 .card__title {
