@@ -36,7 +36,6 @@
             felt slightly bare and uninviting. I’ve got some simple tips to help
             you make any room feel complete.
           </p>
-
           <footer class="card__footer">
             <div class="attribution">
               <img
@@ -47,10 +46,62 @@
               <span class="attribution__name">Michelle Appleton</span>
               <time class="attribution__subtext">28 Jun 2020</time>
             </div>
-            <button class="share">
-              <img src="./images/icon-share.svg" aria-hidden="true">
+            <button
+              class="share js-share"
+              id="menubutton"
+              aria-controls="social-menu"
+              aria-label="Social Medial Link Navigation Button"
+              aria-expanded="false"
+            >
               <span class="hidden">Share</span>
+              <svg
+                class="share__image"
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="13"
+                aria-hidden="true"
+              >
+                <path
+                  fill="#6E8098"
+                  d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+                />
+              </svg>
             </button>
+            <div class="toggletip js-toggletip" aria-hidden="true">
+              <h2 class="toggletip__title">Share</h2>
+              <menu class="social" id="social-menu">
+                <li class="social__item">
+                  <a href="#" class="social__link" role="menuitem">
+                    <img
+                      class="social__image"
+                      src="./images/icon-facebook.svg"
+                      aria-hidden="true"
+                    />
+                    <span class="hidden">Facebook</span>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link" role="menuitem">
+                    <img
+                      class="social__image"
+                      src="images/icon-twitter.svg"
+                      aria-hidden="true"
+                    />
+                    <span class="hidden">Twitter</span>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link" role="menuitem">
+                    <img
+                      class="social__image"
+                      src="./images/icon-pinterest.svg"
+                      aria-hidden="true"
+                    />
+                    <span class="hidden">Pinterest</span>
+                  </a>
+                </li>
+              </menu>
+            </div>
           </footer>
         </section>
       </div>
@@ -67,5 +118,6 @@
         >Māris Ūdris</a
       >.
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
