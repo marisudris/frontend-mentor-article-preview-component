@@ -6,13 +6,13 @@ const toggleTip = document.querySelector('.js-toggletip');
 function openToggletip() {
     shareButton.setAttribute('aria-expanded', 'true');
     shareButton.classList.add('share--active');
-    toggleTip.setAttribute('aria-hidden', 'false');
+    toggleTip.classList.remove('hidden');
 }
 
 function closeToggletip() {
     shareButton.setAttribute('aria-expanded', 'false');
     shareButton.classList.remove('share--active');
-    toggleTip.setAttribute('aria-hidden', 'true');
+    toggleTip.classList.add('hidden');
 }
 
 function switchToggletip(evt) {

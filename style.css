@@ -266,4 +266,5 @@ body {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  opacity: 0;
 }

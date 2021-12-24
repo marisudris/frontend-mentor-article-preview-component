@@ -44,7 +44,9 @@
                 alt="portrait of a person"
               />
               <span class="attribution__name">Michelle Appleton</span>
-              <time class="attribution__subtext">28 Jun 2020</time>
+              <time class="attribution__subtext" datetime="2020-06-28"
+                >28 Jun 2020</time
+              >
             </div>
             <button
               class="share js-share"
@@ -67,46 +69,49 @@
                 />
               </svg>
             </button>
-            <div class="toggletip js-toggletip" aria-hidden="true">
+            <div class="toggletip hidden js-toggletip">
               <h2 class="toggletip__title">Share</h2>
-              <menu class="social" id="social-menu">
+              <ul class="social" id="social-menu">
                 <li class="social__item">
-                  <a href="#" class="social__link" role="menuitem">
+                  <a href="#" class="social__link">
                     <img
                       class="social__image"
                       src="./images/icon-facebook.svg"
                       aria-hidden="true"
+                      alt=""
                     />
                     <span class="hidden">Facebook</span>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a href="#" class="social__link" role="menuitem">
+                  <a href="#" class="social__link">
                     <img
                       class="social__image"
                       src="images/icon-twitter.svg"
                       aria-hidden="true"
+                      alt=""
                     />
                     <span class="hidden">Twitter</span>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a href="#" class="social__link" role="menuitem">
+                  <a href="#" class="social__link">
                     <img
                       class="social__image"
                       src="./images/icon-pinterest.svg"
                       aria-hidden="true"
+                      alt=""
                     />
                     <span class="hidden">Pinterest</span>
                   </a>
                 </li>
-              </menu>
+              </ul>
             </div>
           </footer>
         </section>
       </div>
     </main>
-    <div class="footer hidden">
+    <footer class="footer hidden">
       Challenge by
       <a
         class="footer__link"
@@ -117,7 +122,7 @@
       <a class="footer__link" href="https://github.com/marisudris"
         >Māris Ūdris</a
       >.
-    </div>
+    </footer>
     <script src="./script.js"></script>
   </body>
 </html>
