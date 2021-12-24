@@ -50,7 +50,7 @@ body {
   background: white;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 10px 60px -40px var(--clr-desaturated-dark-blue);
+  box-shadow: 0 10px 90px -50px var(--clr-desaturated-dark-blue);
 }
 
 @media (min-width: 768px) {
@@ -78,6 +78,7 @@ body {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  filter: brightness(1.1);
 }
 
 @media (min-width: 768px) {
@@ -94,7 +95,7 @@ body {
 
 @media (min-width: 768px) {
   .card__body {
-    padding: 3em 3.1em 2.4em;
+    padding: 2.7em 3.2em 2.4em;
   }
 }
 
@@ -106,12 +107,13 @@ body {
 
 @media (min-width: 768px) {
   .card__title {
-    font-size: 1.4rem;
-    margin-bottom: 0.75em;
+    font-size: 1.25rem;
+    margin-bottom: 0.7em;
   }
 }
 
 .card__prose {
+  line-height: 1.6;
   margin-bottom: 1.4em;
 }
 
@@ -166,6 +168,7 @@ body {
   z-index: 1;
 }
 
+.share--active,
 .share:hover,
 .share:focus {
   color: white;
@@ -173,6 +176,7 @@ body {
 }
 
 @media (min-width: 768px) {
+  .share--active,
   .share:hover,
   .share:focus {
     color: white;
@@ -180,6 +184,7 @@ body {
   }
 }
 
+.share--active .share__image path,
 .share:hover .share__image path,
 .share:focus .share__image path {
   fill: white;
