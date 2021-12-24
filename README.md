@@ -60,6 +60,7 @@ Designing the behavior with accessibility in mind is crucial and can be a bit di
 I plan on doing a deep-dive into ARIA and accessible design in order to streamline my widget development in the future by getting familiar with the most common solutions.
 
 ### Useful resources
+
 - [Inclusive Components](https://inclusive-components.design/) - by [Heydon Pickering](https://heydonworks.com/latest/). A useful resource on different accessibility solutions for common design problems.
 - [Sara Soueidan](https://www.sarasoueidan.com/blog/) - A great blog on accessible UX and design as well.
 
