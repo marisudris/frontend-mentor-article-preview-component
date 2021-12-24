@@ -214,12 +214,12 @@ body {
 @media (min-width: 768px) {
   .toggletip {
     width: auto;
-    padding: 1em 3.3em;
+    padding: 1.3em 3.3em;
     border-radius: 8px;
     top: initial;
     left: initial;
     right: 0;
-    transform: translate(44%, -175%);
+    transform: translate(44%, -155%);
   }
 
   .toggletip:before {
