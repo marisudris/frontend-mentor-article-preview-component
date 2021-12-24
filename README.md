@@ -53,7 +53,7 @@ Then I styled the toggletip for both mobile and desktop, and added the necessary
 
 ### What I learned
 
-Designing the behavior with accessibility in mind is crucial and can be a bit difficult for a beginner. Determining what ARIA attributes go where and how to merge the, with the behavior can be a little confusing, however there are a plenty of examples and beginner friendly-resources out there. Sometimes it's hard to properly determine roles for your widgets. I named my widget a _toggletip_ in BEM even though it really isn't a pure toggletip (which normally only gives additional info after getting clicked/tapped, rather than opening an interactive menu). I took that into account when determining what ARIA attributes to use - here I went to something similar as with navigation + a hamburger menu.
+Designing the behavior with accessibility in mind is crucial and can be a bit difficult for a beginner. Determining what ARIA attributes go where and how to merge them with the behavior can be a little confusing, however there are a plenty of examples and beginner friendly-resources out there. Sometimes it's hard to properly determine roles for your widgets. I named my widget a _toggletip_ in BEM even though it really isn't a pure toggletip (which normally only gives additional info after getting clicked/tapped, rather than opening an interactive menu). I took that into account when determining what ARIA attributes to use - here I went to something similar as with navigation + a hamburger menu.
 
 ### Continued development
 
